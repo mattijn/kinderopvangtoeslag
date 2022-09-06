@@ -69,7 +69,6 @@ def bereken_toeslag_bijbetaling(
     print(f"max-uren/maand {opvanguren}")
 
     toetsingsinkomen = ouder_1_inkomen + ouder_2_inkomen
-    # netto_ouder2 = int(ouder_2_inkomen / 12 * 0.8416)
 
     # definieer dataframe met kinder-data
     kinder_config = [
@@ -127,6 +126,4 @@ def bereken_toeslag_bijbetaling(
     ].sum()
     df_kinds_limit = df_kinds_limit.round(2)
     df_kinds_limit = df_kinds_limit.fillna("")
-    # print(netto_ouder2)
-    # print(netto_ouder2 - df_kinds_limit.at['totalen', 'bijbetalen_per_maand'])
     return df_kinds_limit.T.astype(str)
