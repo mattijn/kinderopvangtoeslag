@@ -26,7 +26,9 @@ def toeslag_bijbetaling(s_kind, pcts):
 tarief_opties = [
     (8.47, "KDV 52 weken"),
     (10.17, "KDV 40 weken"),
+    (10.27, "KDV 48 weken"),
     (9.45, "BSO 52 weken"),
+    (9.48, "BSO 48 weken"),
     (10.93, "BSO 40 weken"),
 ]
 

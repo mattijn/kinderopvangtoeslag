@@ -19,15 +19,15 @@ with st.container():
         kind1_col3,
     ) = st.columns(3)
     with kind1_col1:
-        kind_1_uren_maand = st.selectbox(
-            "Kind 1 aantal uren (maand)", options=uur_opties
+        kind_1_uren_maand = st.number_input(
+            "Kind 1 aantal uren (maand)", min_value=0, max_value=150, value=44
         )
 
     with kind1_col2:
         kind_1_uur_tarief = st.selectbox(
             "Kind 1 tarief/soort contract (uur)",
             options=tarief_opties,
-            index=3,
+            index=4,
         )
 
     with kind1_col3:
@@ -43,14 +43,14 @@ with st.container():
         kind2_col3,
     ) = st.columns(3)
     with kind2_col1:
-        kind_2_uren_maand = st.selectbox(
-            "Kind 2 aantal uren (maand)", options=uur_opties
+        kind_2_uren_maand = st.number_input(
+            "Kind 2 aantal uren (maand)", min_value=0, max_value=150, value=44
         )
     with kind2_col2:
         kind_2_uur_tarief = st.selectbox(
             "Kind 2 tarief/soort contract (uur)",
             options=tarief_opties,
-            index=3,
+            index=4,
         )
 
     with kind2_col3:
@@ -66,16 +66,14 @@ with st.container():
         kind3_col3,
     ) = st.columns(3)
     with kind3_col1:
-        kind_3_uren_maand = st.selectbox(
-            "Kind 3 aantal uren (maand)",
-            options=uur_opties,
-            index=2,
+        kind_3_uren_maand = st.number_input(
+            "Kind 3 aantal uren (maand)", min_value=0, max_value=150, value=88
         )
     with kind3_col2:
         kind_3_uur_tarief = st.selectbox(
             "Kind 3 tarief/soort contract (uur)",
             options=tarief_opties,
-            index=1,
+            index=2,
         )
 
     with kind3_col3:
